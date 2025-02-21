@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #1A4870;
+    color: rgb(26, 25, 25);
+    padding: 20px;
+    position: relative;
+    height: 10vh;
+  }
+  header h1 {
+    font-size: 35px;
+    color: beige;
+    font-family:'Times New Roman', Times, serif;
+  }
+  header button{
+    position: absolute;
+  }
