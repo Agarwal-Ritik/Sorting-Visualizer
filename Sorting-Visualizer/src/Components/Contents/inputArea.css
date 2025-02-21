@@ -1,0 +1,46 @@
+#inputArea {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background: #B4D6CD;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(42, 79, 80, 0.625);
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  #inputArea p {
+    font-weight: normal;
+    margin: 0.5%;
+    color: #333;
+  }
+  .input-box {
+    padding: 1%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+    color: black;
+    background-color: aliceblue;
+  }
+  input[list="Sortings"] {
+    padding: 2px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 40%;
+    color: black;
+    background-color: aliceblue;
+  }
+
+  #inputArea button {
+    position: inherit;
+  }
+  #submitContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
