@@ -1,0 +1,30 @@
+#graphArea{
+    background: #B4D6CD;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(42, 79,0, 0.625);
+    width: 100%;
+    height: 100%;
+  }
+  #graph {
+    height: 93%;
+    background-color: white;
+    border: 2px dashed #00796b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+  }
+  
+  #graphButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 7px;
+  }
+  #pauseButton{
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  
