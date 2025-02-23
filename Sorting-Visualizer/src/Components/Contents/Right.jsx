@@ -1,11 +1,11 @@
 import './Right.css'
-import InputArea from './InputArea';
+import UpperRight from './UpperRight';
 import GraphArea from './GraphArea';
 
 function Right(){
     return(
         <div id="right">
-            <InputArea />
+            <UpperRight />
             <GraphArea />
         </div>
     );
