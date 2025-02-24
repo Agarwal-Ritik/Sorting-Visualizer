@@ -9,7 +9,8 @@ form {
     font-size: 14px;
     font-weight: bold;
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom:1.5%;
+   
   }
   form p {
     font-weight: normal;
@@ -46,4 +47,3 @@ form {
 
   h1{
     justify-content: center;
-  }

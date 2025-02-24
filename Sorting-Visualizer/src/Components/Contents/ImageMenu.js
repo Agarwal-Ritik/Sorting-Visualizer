@@ -8,6 +8,7 @@ let definitionArr = ["Sorting algorithms are fundamental techniques used in comp
     "Insertion sort is a basic sorting algorithm that sequentially sorts each item in the final sorted array or list. It is significantly low on efficiency while working on comparatively larger data sets. While other algorithms such as quicksort, heapsort, or merge sort have time and again proven to be far more effective and efficient.", 
     "Counting sort is a sorting technique that is used when the range of keys is relatively small and there are duplicate keys. Counting sorts differ from sorts that compare data in multiple passes. They work by creating an array of counters the size of the largest integer in the list therefore, the keys must be integers or data that can be readily converted to integers."]
 
+
 let bestCase = ["Best case time complexity is the minimum time an algorithm takes to complete, assuming the most favorable input configuration.","O(n)","O(n log n)","O(n log n)","O(n²)","O(n)","O(n + k)"]   
 let averageCase = ["The average case time complexity is the expected time taken by an algorithm over all possible inputs, assuming a uniform distribution of inputs.","O(n²)","O(n log n)","O(n log n)","O(n²)","O(n²)","O(n + k)"]
 let worstCase = ["Worst case time complexity is the maximum amount of time an algorithm takes to complete, given the least favorable input of size n.","O(n²)","O(n log n)","O(n²)","O(n²)","O(n²)","O(n + k)"]

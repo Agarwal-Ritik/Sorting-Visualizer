@@ -1,18 +1,3 @@
-import { bubbleSort } from "./SortingAlgorithms/BubbleSort";
-import { countingSort } from "./SortingAlgorithms/CountingSort";
-import { insertionSort } from "./SortingAlgorithms/InsertionSort";
-import { mergeSort } from "./SortingAlgorithms/MergeSort";
-import { quickSort } from "./SortingAlgorithms/QuickSort";
-import { selectionSort } from "./SortingAlgorithms/SelectionSort";
-
-let array = [];
-export async function selectAlgo(
-  sort,
-  arr,
-  setArray,
-  updateGraph,
-  changeColor,
-) {
   let newArray;
   array = arr;
   switch (sort) {
