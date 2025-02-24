@@ -1,28 +1,32 @@
-import './inputArea.css';
-import '../button.css';
+import "./InputArea.css";
 
 function InputArea() {
   return (
-    <div id="inputArea">
-      <p>
+    <div>
+      <label>
         Input Array Size -&nbsp;
-        <input type="number" className="input-box" min={10} max={100}/>
-      </p>
-      <p>
+        <input
+          name="ArraySize"
+          type="number"
+          className="input-box"
+          required
+          min={1}
+          max={50}
+        />
+      </label>
+      <br />
+      <label>
         Select sorting algorithm -&nbsp;
-        <input list="Sortings" name="sortingAlgorthm" />
+        <input list="Sortings" name="SortingAlgorithm" required />
         <datalist id="Sortings">
           <option value="Bubble Sort" />
           <option value="Insertion Sort" />
-          <option value="Selection Sort" />
+          <option value="Counting Sort" />
           <option value="Merge Sort" />
           <option value="Quick Sort" />
           <option value="Selection Sort" />
         </datalist>
-      </p>
-      <p id="submitContainer">
-        <button>Submit</button>
-      </p>
+      </label>
     </div>
   );
 }

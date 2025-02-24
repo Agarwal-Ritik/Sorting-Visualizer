@@ -2,11 +2,11 @@ import Introduction from "./Introduction";
 import GraphImage from "./GraphImage";
 import './FirstSection.css'
 
-function FirstSection() {
+function FirstSection({IntroData, ImageSource, Name}) {
   return (
     <div id="first-section">
-      <Introduction />
-      <GraphImage />
+      <Introduction Intro = {IntroData} SortingName={Name}/>
+      <GraphImage Image = {ImageSource}/>
     </div>
   );
 }

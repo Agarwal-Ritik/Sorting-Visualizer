@@ -1,3 +1,4 @@
+
 export async function insertionSort(arr, updateGraph, changeColor)
 {
     let newArray=[...arr];

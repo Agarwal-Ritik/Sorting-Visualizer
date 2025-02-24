@@ -1,3 +1,4 @@
+
 export const quickSort = async (arr, setArray, updateGraph, changeColor) => {
     const sort = async (arr, low, high) => {
       if (low < high) {
@@ -37,3 +38,4 @@ export const quickSort = async (arr, setArray, updateGraph, changeColor) => {
     setArray(arrCopy);
   };
   
+
