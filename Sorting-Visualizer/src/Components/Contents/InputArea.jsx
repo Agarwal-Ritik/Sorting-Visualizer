@@ -10,8 +10,8 @@ function InputArea() {
           type="number"
           className="input-box"
           required
-          min={10}
-          max={100}
+          min={1}
+          max={50}
         />
       </label>
       <br />
@@ -21,7 +21,7 @@ function InputArea() {
         <datalist id="Sortings">
           <option value="Bubble Sort" />
           <option value="Insertion Sort" />
-          <option value="Selection Sort" />
+          <option value="Counting Sort" />
           <option value="Merge Sort" />
           <option value="Quick Sort" />
           <option value="Selection Sort" />

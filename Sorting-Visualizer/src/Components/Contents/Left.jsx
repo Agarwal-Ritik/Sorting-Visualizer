@@ -3,10 +3,10 @@ import Algorithm from './Algorithm.jsx'
 import FirstSection from './FirstSection.jsx'
 import './Left.css';
 
-function Left(){
+function Left({define, src}){
     return(
         <div id='left'>
-            <FirstSection />
+            <FirstSection define = {define} src = {src}/>
             <Characterstics />
             <Algorithm />
         </div>

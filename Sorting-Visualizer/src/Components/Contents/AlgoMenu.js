@@ -1,4 +1,4 @@
-import {bubbleSort} from "./SortingAlgorithms/BubbleSort.js";
+import {bubbleSort} from "../SortingAlgorithms/BubbleSort.js";
 
 export function selectAlgo(sort, arr) {
   let newArray;
