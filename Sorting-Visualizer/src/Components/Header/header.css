@@ -7,6 +7,8 @@ header {
     padding: 20px;
     position: relative;
     height: 10vh;
+    transition: background-color 0.3s ease;
+    
   }
   header h1 {
     font-size: 35px;
@@ -16,3 +18,7 @@ header {
   header button{
     position: absolute;
   }
+  body.dark-mode header {
+    background-color: #2A3335;
+    color: white;
+}

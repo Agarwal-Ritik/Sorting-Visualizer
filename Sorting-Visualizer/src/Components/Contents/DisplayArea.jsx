@@ -1,9 +1,10 @@
 import './InputArea.css'
-function DisplayArea(props){
+function DisplayArea({SortingName, GeneratedArray, GeneratedSortedArray}){
     return(
         <div>
-            <h1>{props.SortingName}</h1>
-            <p id="random-array">Array Elements - {props.GeneratedArray}</p>
+            <h1>{SortingName}</h1>
+            <p>Array Elements - {GeneratedArray}</p>
+            <p>Array Elements Sorted - {GeneratedSortedArray}</p>
         </div>
     );
 }

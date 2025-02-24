@@ -47,23 +47,3 @@ form {
 
   h1{
     justify-content: center;
-  }
-  body.dark-mode form {
-    background: #2A3335; 
-    color: white;
-    box-shadow: 0 4px 4px #5c7479; 
-}
-
-body.dark-mode form p {
-    color: lightgray;
-}
-
-body.dark-mode .input-box, body.dark-mode input[list="Sortings"] {
-    border: 2px solid #555; 
-    background-color: #444; 
-    color: white;
-}
-
-body.dark-mode h1 {
-    color: white;
-}
