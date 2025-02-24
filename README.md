@@ -10,7 +10,7 @@
 - Shantanu Mamgain
 
 ### Project structure
-<img src="./public/Layout.svg" />
+<img src="./Sorting-Visualizer/public/Layout.svg" />
 
 ### Technology Used
 - HTML
