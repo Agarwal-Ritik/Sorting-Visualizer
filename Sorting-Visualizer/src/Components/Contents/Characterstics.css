@@ -14,3 +14,11 @@
     overflow-y:scroll;
     scrollbar-color:rgb(232, 235, 224) white;
 }
+body.dark-mode .characterstic-container {
+    background-color: black; 
+    color: rgba(255, 255, 255, 0.50);
+    border: 1px solid white; 
+}
+body.dark-mode .characterstic-container:hover {
+    scrollbar-color: rgba(255, 255, 255, 0.5) #333333;
+}
