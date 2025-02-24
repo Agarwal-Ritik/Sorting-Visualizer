@@ -12,3 +12,7 @@ button{
   button:hover{
     background: #2A3335;
   }
+  body.dark-mode button {
+    background: #f2c988;
+    color: rgb(92, 75, 75);
+}

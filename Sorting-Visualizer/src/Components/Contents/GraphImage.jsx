@@ -1,7 +1,7 @@
 import './GraphImage.css'
-function GraphImage(){
+function GraphImage({Image}){
     return(
-        <img id='Image-tag' src="https://titrias.com/files/2015/08/Untitled.png" alt="Comparison Graph Image"/>
+        <img id='Image-tag' src={Image} alt="Comparison Graph Image"/>
     );
 }
 

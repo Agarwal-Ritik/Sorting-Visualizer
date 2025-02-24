@@ -5,7 +5,7 @@ import DisplayArea from "./DisplayArea";
 import InputArea from "./InputArea";
 import {generateArray} from './RandomArray.js';
 import {selectAlgo} from './AlgoMenu.js';
-import {selectData} from './ImageMenu.js';
+// import {selectData} from './ImageMenu.js';
 // import BubbleSort from "Sorting-Visualizer/src/SortingAlgorithms/BubbleSort.js";
 // import CountingSort from "Sorting-Visualizer/src/SortingAlgorithms/CountingSort.js";
 // import SelectionSort from "Sorting-Visualizer/src/SortingAlgorithms/SelectionSort.js";
@@ -37,7 +37,7 @@ function UpperRight() {
       const arrayCopy = [...newArray];
       const sortArr = selectAlgo(SortingAlgorithm, arrayCopy);
       setSortedArray(sortArr);
-      selectData(SortingAlgorithm);
+      // selectData(SortingAlgorithm);
     }
     setIsToggled(!isToggled);
   };

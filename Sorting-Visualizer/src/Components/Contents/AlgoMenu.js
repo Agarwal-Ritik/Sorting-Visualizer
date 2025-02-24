@@ -1,30 +1,43 @@
-import {bubbleSort} from "./SortingAlgorithms/BubbleSort.js";
+import { bubbleSort } from "./SortingAlgorithms/BubbleSort";
+import { countingSort } from "./SortingAlgorithms/CountingSort";
+import { insertionSort } from "./SortingAlgorithms/InsertionSort";
+import { mergeSort } from "./SortingAlgorithms/MergeSort";
+import { quickSort } from "./SortingAlgorithms/QuickSort";
+import { selectionSort } from "./SortingAlgorithms/SelectionSort";
 
-export function selectAlgo(sort, arr) {
+let array = [];
+export async function selectAlgo(
+  sort,
+  arr,
+  setArray,
+  updateGraph,
+  changeColor,
+) {
   let newArray;
+  array = arr;
   switch (sort) {
     case "Bubble Sort":
-      newArray = bubbleSort(arr);
+      newArray = await bubbleSort(arr, updateGraph, changeColor);
       break;
 
     case "Selection Sort":
-      newArray = selectionSort(arr);
+      newArray = await selectionSort(arr, updateGraph, changeColor);
       break;
 
     case "Insertion Sort":
-      newArray = insertionSort(arr);
+      newArray = await insertionSort(arr, updateGraph, changeColor);
       break;
 
     case "Quick Sort":
-      newArray = quickSort(arr);
+      newArray = await quickSort(arr, setArray, updateGraph, changeColor);
       break;
 
     case "Merge Sort":
-      newArray = mergeSort(arr);
+      newArray = await mergeSort(arr, setArray, updateGraph, changeColor);
       break;
 
     case "Counting Sort":
-      newArray = countingSort(arr);
+      newArray = await countingSort(arr, updateGraph, changeColor);
       break;
 
     default:
@@ -32,4 +45,12 @@ export function selectAlgo(sort, arr) {
   }
 
   return newArray;
+}
+let name = "";
+export function getSortingName(sortingName) {
+  name = sortingName;
+}
+
+export function returnSortingName() {
+  return name;
 }
