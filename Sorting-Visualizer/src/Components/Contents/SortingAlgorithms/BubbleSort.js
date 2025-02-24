@@ -2,15 +2,23 @@ function swap(arr, i , j){
     let temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
-}
-export function bubbleSort(arr){
+} 
+export async function bubbleSort(arr, updateGraph, changeColor){
     let n = arr.length;
-    for(let i = n-1; i >= 1; i--){
-        for(let j = 0; j < i; j++){
-            if(arr[j] > arr[j+1]){
-                swap(arr, j, j+1);
+
+    let newArray=[...arr];
+    for(let i = 0; i < n-1; i++){
+        for(let j = 0; j < n- i -1; j++){
+            updateGraph(newArray);
+            changeColor(j, j+1);
+            await new Promise((resolve) => setTimeout(resolve, 1200));
+            if(newArray[j] > newArray[j+1]){
+                swap(newArray, j, j+1);
+                updateGraph(newArray);
+                changeColor(j, j+1);
+                await new Promise((resolve) => setTimeout(resolve, 1200));
             }
         }
     }
-    return arr;
+    return newArray;
 }
